@@ -1,0 +1,438 @@
+/* -------------------------------------------------- 
+    styles de base
+-----------------------------------------------------*/
+body {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    background: white;
+    margin: 0 auto;
+    font-family: sans-serif;
+    
+}
+p {
+    margin-bottom: 1em;
+    line-height: 1.4;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+/*Pour que quand on scroll ça mieux que instantané(comme animation) */
+html {
+    scroll-behavior: smooth;
+   } 
+
+/* -------------------------------------------------- 
+   styles navigation 
+-----------------------------------------------------*/
+nav {
+    background: black;
+    margin-bottom: 30px;
+    padding: 1px;
+    margin:0;
+    
+}
+
+nav li {
+    padding: 12px;
+    margin: 0;
+    list-style: none;
+   text-decoration:none;
+   
+    
+    
+}
+nav ul li:hover {
+    background: rgb(78, 78, 60);
+    text-decoration: underline;
+    
+}
+.noirEntete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   
+    
+}
+nav ul li a {
+    font-size: 1em;
+    color:rgb(252, 252, 252);
+    padding: 8px 5px; 
+    text-decoration: none;
+    
+}
+/* -------------------------------------------------- 
+   Background
+-----------------------------------------------------*/
+
+/* -------------------------------------------------- 
+  styles header 
+-----------------------------------------------------*/
+.HautDePage{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+  
+   padding: 100px;
+   
+   background-image: url('../images/pizza.jpg');
+   background-size: cover;
+   margin:0;
+   
+}
+.HautDePage h1 {
+    align-self: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: rgb(247, 96, 8) 0px 5px 5px;
+    font-size: 100px;
+}
+.HautDePage h2 {
+    align-self: center;
+    padding: 100px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(240, 10, 10) 0px 5px 5px;
+    font-size: 40px;
+    display: block;
+    display: inline;
+}
+.HautDePage h3 {
+    align-self: center;
+    padding: 150px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(243, 13, 13) 0px 5px 5px;
+    font-size: 50px;
+    
+}
+.HautDePage h3{
+   flex-direction: row;
+   background-color: none;
+   
+}
+
+/* -------------------------------------------------- 
+   styles main
+-----------------------------------------------------*/
+.menu{
+    
+    margin-top: -50px;
+    background-image: url('../images/backgroundMenu.jpg');
+    background-size: cover;
+    padding: 2em 1em 1em;
+    
+  
+}
+
+.menu li{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-content: center;
+   flex-wrap: wrap;
+   color:rgb(255, 255, 255);
+   text-shadow: rgb(243, 13, 13) 0px 5px 5px;
+   margin: 0;
+   list-style: none;
+   
+  
+   
+   
+}
+
+
+.titreMenu {
+    margin: 0 auto;
+    
+    
+}
+
+.presenteAccueil ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+    
+}
+
+
+
+/* -------------------------------------------------- 
+   styles main PARTIE 2
+-----------------------------------------------------*/
+.tradition ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    margin-left:-30px;
+    
+}
+.tradition li{
+    list-style: none;
+}
+.premierAffiche li{
+    display: flex;
+    
+}
+
+.premierAffiche h3{
+    color:rgb(4, 4, 27);
+   
+}
+.premierAffiche h2{
+
+    color:rgb(2, 2, 17);
+    background-color: white;
+    font-size: 30px;
+    border: solid 5px rgb(26, 17, 17);
+}
+
+.restaurant{
+    grid-row: 1/3;
+    grid-area: 1/1;
+    border: solid 5px white;
+    background-image: url('../images/backgroundBrun.jpg');
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+   
+}
+.restaurant h2{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px;
+}
+.restaurant h3{
+    color:white;
+    flex-direction: row;
+    justify-items: center;
+    vertical-align: middle;
+}
+.restaurant p{
+    font-size: 20px;
+    padding-bottom: 20px;;
+}
+.restaurant2{
+    grid-row: 2/2;
+    grid-area: 1/2;
+    border: solid 5px white;
+    background-image: url('../images/restaurant2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+/* -------------------------------------------------- 
+   styles main PARTIE 2
+-----------------------------------------------------*/
+.tradition2 ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    margin-left:-30px;
+    
+}
+.tradition2 li{
+    list-style: none;
+}
+
+.premierAffiche2 h3{
+    color:rgb(4, 4, 27);
+    
+}
+.premierAffiche2 h2{
+    color:rgb(2, 2, 17);
+    background-color: white;
+    font-size: 30px;
+    border: solid 5px rgb(26, 17, 17);
+}
+
+.restaurant4{
+    grid-row: 2/3;
+    grid-area: 1/2;
+    border: solid 5px white;
+    background-image: url('../images/backgroundBrun.jpg');
+    background-size: cover;
+    text-align: center;
+    vertical-align: middle;
+}
+.restaurant4 h2{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px;
+}
+.restaurant4 h3{
+    color:white;
+    flex-direction: row;
+    justify-items: center;
+    vertical-align: middle;
+}
+.restaurant4 p{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.restaurant3{
+    grid-row: 1/1;
+    grid-area: 1/1;
+    border: solid 5px white;
+    background-image: url('../images/pizzaCuisiner.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+}
+
+/* -------------------------------------------------- 
+   styles main PARTIE 3 (section)
+-----------------------------------------------------*/
+.horaire ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left:-30px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.horaire li{
+    list-style: none;
+}
+.formulaire1 h3{
+    color:black;
+}
+.formulaire1 p{
+    color:black;
+}
+.formulaire1{
+    background-image: url('../images/horaireImgBackground.jpg');
+    background-size: cover;
+    border: solid white 10px;
+    grid-row: 1/1;
+    grid-area: 1/2;
+    
+    
+}
+.imageStationnement{
+    background-image: url('../images/imgDuRestaurant.jpg');
+    background-size: cover;
+    border: solid white 10px;
+    grid-row: 2/2;
+    grid-area: 1/2;
+    width: 100%;
+    
+}
+
+
+
+
+/* -------------------------------------------------- 
+   styles footer 
+-----------------------------------------------------*/
+footer {
+    background: black;
+    padding: 1em;
+}
+
+footer li {
+    list-style: none;
+}
+
+
+footer img:hover{
+    opacity: .5;
+}
+.basDePage h2, p{
+    color:white;
+    
+}
+
+.basDePage ul{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+    
+}
+.facebook{
+    width: 50px;
+}
+.twitter{
+    width: 50px;
+}
+
+   
+
+/* -------------------------------------------------- 
+   Adaptation pour les différents types d'écrans avec display grid
+-----------------------------------------------------*/
+@supports(display: grid){
+    @media(max-width: 660px){
+        .presenteAccueil ul{
+            grid-template-columns: 1fr ;
+            
+        }
+        .traditon ul{
+            grid-template-rows: 1fr;
+        }
+        
+        
+    }
+    @media(min-width: 661px) and (max-width: 1080px){
+        .presenteAccueil ul{
+            grid-template-columns: 1fr 1fr;
+        }
+        .basDePage p {
+            font-size: 25px;
+        }
+        .basDePage h2 {
+            font-size: 30px;
+        }
+    }
+    @media(min-width: 1080px) {
+        .basDePage p {
+            font-size: 30px;
+        }
+        .basDePage h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+/* -------------------------------------------------- 
+   Adaptation pour les différents types d'écrans avec display flex
+-----------------------------------------------------*/
+@supports(display: flex){
+    @media(max-width: 660px){
+        .noirEntete{
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .HautDePage h1{
+            align-items: center;
+        }
+       
+        .facebook{
+           width:100px;
+        }
+        .twitter{
+            width:100px;
+        }
+        
+    }
+    @media(min-width: 661px) and (max-width: 1080px){
+        .facebook{
+            width:150px;
+         }
+         .twitter{
+             width:150px;
+         }
+    }
+    @media(min-width: 1080px) {
+        .facebook{
+            width: 200px;
+         }
+         .twitter{
+             width: 200px;
+             font-size: 200px;
+         }
+    }
+}
